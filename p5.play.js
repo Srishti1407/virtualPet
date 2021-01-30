@@ -1399,9 +1399,11 @@ defineLazyP5Property('quadTree', function() {
 /*
 //framerate independent delta, doesn't really work
 p5.prototype.deltaTime = 1;
+
 var now = Date.now();
 var then = Date.now();
 var INTERVAL_60 = 0.0166666; //60 fps
+
 function updateDelta() {
 then = now;
 now = Date.now();

@@ -14,7 +14,7 @@ function setup() {
   dog = createSprite(300,300)
   dog.addImage("dog",dogimg)
   dog.scale = 0.5
-  foodstock = database.ref('food')
+  foodstock = database.ref('Food')
   foodstock.on("value",readStock)
 }
 
@@ -54,3 +54,6 @@ function draw() {
   textSize(30)
   text("Press the Up arrow to feed the Dog",100,100)
 }
+
+
+
